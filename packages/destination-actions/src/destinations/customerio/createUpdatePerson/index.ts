@@ -97,6 +97,12 @@ const action: ActionDefinition<Settings, Payload> = {
         }
       }
     },
+    timestamp: {
+      label: 'Timestamp',
+      description: 'A timestamp of when the person was identified. Used for ordering attribute updates.',
+      type: 'string',
+      default: { '@path': '$.timestamp' }
+    },
     ...eventProperties
   },
 
